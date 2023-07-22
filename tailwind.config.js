@@ -4,12 +4,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'neonGreeen': '#39ff14',
+        'neonGreeen': {
+          light: '#81FF6A',
+          DEFAULT: '#39ff14',
+          dark: '#1AAD00',
+        } 
       },
 
       screens: {
         'widescreen' : {'raw': '(min-aspect-ratio: 3/2)'},
-        'tallscreen' : {'raw': '(min-aspect-ratio: 13/20)'},
+        'tallscreen' : {'raw': '(max-aspect-ratio: 13/20)'},
       },
 
       keyframes: {
